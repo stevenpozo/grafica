@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Preguntas</title>
+    <style>
+        .correcto {
+            color: green;
+        }
+
+        .incorrecto {
+            color: red;
+        }
+
+        .question{
+            font-weight: bold;
+        }
+
+        .survay{
+            background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.8) 0%, rgba(211, 211, 211, 0.5) 100%);
+            width: 80%;
+            text-align: justify;
+        }
+        .cont{
+            margin-bottom: 30px;
+        }
+
+        .leg{
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<center>
+    <form id="quizForm">
+        <fieldset class="survay">
+            <legend  class="leg"><center>PREGUNTAS DE INVESTIGACIÓN PARA PASAR EL PARCIAL JUAPOS</center></legend>
+
+            <div class="cont">
+                <label for="pregunta1" class="question">1. Identifique la(s) proposicion(es) que son verdadera(s):
+                </label><br>
+                <input type="radio" id="opcion1_1" name="pregunta1" value="opcion1_1"
+                    onclick="checkAnswer('opcion1_1', 'pregunta1', 'respuesta1')">
+                <label for="opcion1_1">a. Un experimento es una investigación informal, rigurosa y controlada en la que
+                    a las
+                    variables en estudio se les dan un solo valore y se evalúa el efecto ha dicho cada valor.
+                </label><br>
+                <input type="radio" id="opcion1_2" name="pregunta1" value="opcion1_2"
+                    onclick="checkAnswer('opcion1_2', 'pregunta1', 'respuesta1')">
+                <label for="opcion1_2">b. Un experimento es una investigación formal, rigurosa y controlada en la que a
+                    las
+                    variables en estudio se les dan diferentes valores para evaluar el efecto ha tenido cada
+                    valor.
+                </label><br>
+                <input type="radio" id="opcion1_3" name="pregunta1" value="opcion1_3"
+                    onclick="checkAnswer('opcion1_3', 'pregunta1', 'respuesta1')">
+                <label for="opcion1_3">c. Un experimento es una investigación formal y poco rigurosa en la que a las
+                    variables
+                    en estudio se les dan diferentes valores y se evalúa el efecto ha tenido cada valor.
+                </label><br>
+                <input type="radio" id="opcion1_4" name="pregunta1" value="opcion1_4"
+                    onclick="checkAnswer('opcion1_4', 'pregunta1', 'respuesta1')">
+                <label for="opcion1_4">d. Un experimento es una investigación formal, rigurosa y controlada en la que a
+                    las
+                    variables en estudio se les dan diferentes valores para evaluar el efecto ha tenido cada
+                    valor</label><br>
+            </div>
+            <div id="respuesta1"></div>
+
+            <div class="cont">
+                <label for="pregunta2" class="question">2. Action Research es uno de los métodos de investigación cualitativa proveniente
+                    de las ciencias
+                    sociales más utilizados en ls sistemas de información e Ingenieria de Software.
+                </label><br>
+                <input type="radio" id="opcion2_1" name="pregunta2" value="opcion2_1"
+                    onclick="checkAnswer('opcion2_1', 'pregunta2', 'respuesta2')">
+                <label for="opcion2_1">a. Verdadero</label><br>
+                <input type="radio" id="opcion2_2" name="pregunta2" value="opcion2_2"
+                    onclick="checkAnswer('opcion2_2', 'pregunta2', 'respuesta2')">
+                <label for="opcion2_2">b. Falso</label><br>
+            </div>
+            <div id="respuesta2"></div>
+
+            <div class="cont">
+                <label for="pregunta3" class="question">3. ¿Cuál(es) de los siguientes postulados no corresponden a una una
+                    característica del método
+                    de investigación Action Research?
+                </label><br>
+                <input type="checkbox" id="opcion3_1" name="pregunta3" value="opcion3_1"
+                    onclick="checkAnswer('opcion3_1', 'pregunta3', 'respuesta3')">
+                <label for="opcion3_1">a. Action Research se leva a cabo en un contexto de colaboración de las personas
+                    implicadas en un contexto determinado</label><br>
+                <input type="checkbox" id="opcion3_2" name="pregunta3" value="opcion3_2"
+                    onclick="checkAnswer('opcion3_2', 'pregunta3', 'respuesta3')">
+                <label for="opcion3_2">b. Somete a prueba las prácticas, las ideas y las suposiciones.
+                    Action Research no somete a prueba las prácticas, las ideas y las suposiciones de un
+                    contexto específico.
+                </label><br>
+                <input type="checkbox" id="opcion3_3" name="pregunta3" value="opcion3_3"
+                    onclick="checkAnswer('opcion3_3', 'pregunta3', 'respuesta3')">
+                <label for="opcion3_3">c. Action Research lleva a cabo una investigación iterativa introspectiva de
+                    ciclos de
+                    planificación, acción, observación y reflexión.</label><br>
+                <input type="checkbox" id="opcion3_4" name="pregunta3" value="opcion3_4"
+                    onclick="checkAnswer('opcion3_4', 'pregunta3', 'respuesta3')">
+                <label for="opcion3_4">d. Action Research procede regresivamente a cambios justos.</label><br>
+                <input type="checkbox" id="opcion3_4" name="pregunta3" value="opcion3_4"
+                    onclick="checkAnswer('opcion3_5', 'pregunta3', 'respuesta3')">
+                <label for="opcion3_4">e. Action Research se caracteriza porque las personas trabajan o participan con
+                    la
+                    intención de mejorar sus propias prácticas.</label><br>
+            </div>
+            <div id="respuesta3"></div>
+
+            <div class="cont">
+                <label for="pregunta4" class="question">4. ¿Cuál de las siguientes afirmaciones no se corresponde con las características
+                    de los estudios
+                    experimentales?
+                </label><br>
+                <input type="radio" id="opcion4_1" name="pregunta4" value="opcion4_1"
+                    onclick="checkAnswer('opcion4_1', 'pregunta4', 'respuesta4')">
+                <label for="opcion4_1">a. Presenta dificultades en la generalización debido a la selección y o a la
+                    propia rigidez
+                    de la intervención.
+                </label><br>
+                <input type="radio" id="opcion4_2" name="pregunta4" value="opcion4_2"
+                    onclick="checkAnswer('opcion4_2', 'pregunta4', 'respuesta4')">
+                <label for="opcion4_2">b. Es un ensayo analítico y prospectivo caracterizado por la manipulación
+                    artificial del
+                    factor de estudio por el investigador y por la aleatorización de los casos o sujetos de
+                    prueba.
+                </label><br>
+                <input type="radio" id="opcion4_3" name="pregunta4" value="opcion4_3"
+                    onclick="checkAnswer('opcion4_3', 'pregunta4', 'respuesta4')">
+                <label for="opcion4_3">c. Son repetibles y comparables con otras experiencias, pero también suponen un
+                    coste
+                    elevado.
+                </label><br>
+                <input type="radio" id="opcion4_4" name="pregunta4" value="opcion4_4"
+                    onclick="checkAnswer('opcion4_4', 'pregunta4', 'respuesta4')">
+                <label for="opcion4_4">d. Existe menos posibilidad de sesgos debido a la selección aleatoria de los
+                    grupos.
+                </label><br>
+                <input type="radio" id="opcion4_5" name="pregunta4" value="opcion4_5"
+                    onclick="checkAnswer('opcion4_5', 'pregunta4', 'respuesta4')">
+                <label for="opcion4_5">e. Estos estudios son muy recomendables debido a su bajo grado de complejidad y
+                    al
+                    mínimo nivel de conocimientos que requieren.
+                </label><br>
+            </div>
+            <div id="respuesta4"></div>
+
+
+
+            <div class="cont">
+                <label for="pregunta5" class="question">5. El método lógico inductivo se utiliza para:
+                </label><br>
+                <input type="radio" id="opcion5_1" name="pregunta5" value="opcion5_1"
+                    onclick="checkAnswer('opcion5_1', 'pregunta5', 'respuesta5')">
+                <label for="opcion5_1">a. Partiendo de conocimientos particulares llegar a una conclusión generalizada.
+                </label><br>
+                <input type="radio" id="opcion5_2" name="pregunta5" value="opcion5_2"
+                    onclick="checkAnswer('opcion5_2', 'pregunta5', 'respuesta5')">
+                <label for="opcion5_2">b. Partiendo de conocimientos generales llegar a una conclusión particular.
+                </label><br>
+                <input type="radio" id="opcion5_3" name="pregunta5" value="opcion5_3"
+                    onclick="checkAnswer('opcion5_3', 'pregunta5', 'respuesta5')">
+                <label for="opcion5_3">c. Partiendo de conocimientos particulares llegar a una conclusión más
+                    particular.
+                </label><br>
+                <input type="radio" id="opcion5_4" name="pregunta5" value="opcion5_4"
+                    onclick="checkAnswer('opcion5_4', 'pregunta5', 'respuesta5')">
+                <label for="opcion5_4">d. Partiendo de conocimientos generales llegar a una conclusión más general.
+                </label><br>
+            </div>
+            <div id="respuesta5"></div>
+
+
+            <div class="cont">
+                <label for="pregunta6" class="question">6. Identifique la(s) proposicion(es) que son verdadera(s):</label><br>
+                <input type="radio" id="opcion6_1" name="pregunta6" value="opcion6_1"
+                    onclick="checkAnswer('opcion6_1', 'pregunta6', 'respuesta6')">
+                <label for="opcion6_1">a. Un estudio descriptivo tiene el propósito de medir el grado de relación que
+                    exista entre 2 o más conceptos o variables.</label><br>
+                <input type="radio" id="opcion6_2" name="pregunta6" value="opcion6_2"
+                    onclick="checkAnswer('opcion6_2', 'pregunta6', 'respuesta6')">
+                <label for="opcion6_2">b. Los estudios descriptivos buscan especificar las propiedades poco importantes
+                    de personas, grupos, comunidades, etc.</label><br>
+                <input type="radio" id="opcion6_3" name="pregunta6" value="opcion6_3"
+                    onclick="checkAnswer('opcion6_3', 'pregunta6', 'respuesta6')">
+                <label for="opcion6_3">c. El propósito de un estudio descriptivo es describir situaciones y eventos.
+                    Decir cómo es y cómo se manifiesta determinado fenómeno.</label><br>
+                <input type="radio" id="opcion6_4" name="pregunta6" value="opcion6_4"
+                    onclick="checkAnswer('opcion6_4', 'pregunta6', 'respuesta6')">
+                <label for="opcion6_4">d. Los estudios descriptivos sirven para preparar el terreno y por lo común
+                    anteceden a investigaciones con alcances exploratorias, correlacionales o explicativas.</label><br>
+            </div>
+            <div id="respuesta6"></div>
+
+            <div class="cont">
+                <label for="pregunta7" class="question">7. Los estudios correlacionales tienen el propósito de:</label><br>
+                <input type="radio" id="opcion7_1" name="pregunta7" value="opcion7_1"
+                    onclick="checkAnswer('opcion7_1', 'pregunta7', 'respuesta7')">
+                <label for="opcion7_1">a. Medir el grado de relación que exista entre una variables. La correlación
+                    puede ser positiva o negativa.</label><br>
+                <input type="radio" id="opcion7_2" name="pregunta7" value="opcion7_2"
+                    onclick="checkAnswer('opcion7_2', 'pregunta7', 'respuesta7')">
+                <label for="opcion7_2">b. Medir el grado de relación que exista entre 2 a más conceptos o variables. La
+                    correlación puede ser neutra.</label><br>
+                <input type="radio" id="opcion7_3" name="pregunta7" value="opcion7_3"
+                    onclick="checkAnswer('opcion7_3', 'pregunta7', 'respuesta7')">
+                <label for="opcion7_3">c. Identificar la posible relación que exista entre 2 a más conceptos o
+                    variables. La correlación puede ser únicamente descrita.</label><br>
+                <input type="radio" id="opcion7_4" name="pregunta7" value="opcion7_4"
+                    onclick="checkAnswer('opcion7_4', 'pregunta7', 'respuesta7')">
+                <label for="opcion7_4">d. Medir el grado de relación que exista entre 2 a más conceptos o variables. La
+                    correlación puede ser positiva o negativa.</label><br>
+            </div>
+            <div id="respuesta7"></div>
+
+            <div class="cont">
+                <label for="pregunta8" class="question">8. ¿Cuál de los siguientes postulados no representan una característica de los
+                    estudios
+                    experimentales?</label><br>
+                <input type="radio" id="opcion8_1" name="pregunta8" value="opcion8_1"
+                    onclick="checkAnswer('opcion8_1', 'pregunta8', 'respuesta8')">
+                <label for="opcion8_1">a. En un estudio experimental se realiza la manipulación directa de una variable
+                    independiente.</label><br>
+                <input type="radio" id="opcion8_2" name="pregunta8" value="opcion8_2"
+                    onclick="checkAnswer('opcion8_2', 'pregunta8', 'respuesta8')">
+                <label for="opcion8_2">b. En un estudio experimental se realiza la comparación de dos o más grupos o
+                    conjuntos de condiciones.</label><br>
+                <input type="radio" id="opcion8_3" name="pregunta8" value="opcion8_3"
+                    onclick="checkAnswer('opcion8_3', 'pregunta8', 'respuesta8')">
+                <label for="opcion8_3">c. Un estudio experimental se caracteriza por buscar equivalencia estadística
+                    entre
+                    sujetos en diversos grupos.</label><br>
+                <input type="radio" id="opcion8_4" name="pregunta8" value="opcion8_4"
+                    onclick="checkAnswer('opcion8_4', 'pregunta8', 'respuesta8')">
+                <label for="opcion8_4">d. En un experimento se estudia cuanti-cualitativamente una
+                    condición.</label><br>
+                <input type="radio" id="opcion8_5" name="pregunta8" value="opcion8_5"
+                    onclick="checkAnswer('opcion8_5', 'pregunta8', 'respuesta8')">
+                <label for="opcion8_5">e. En un estudio experimental se puede utilizar estadística
+                    inferencial.</label><br>
+            </div>
+            <div id="respuesta8"></div>
+
+
+            <div class="cont">
+                <label for="pregunta9" class="question">9. ¿Cuál de las siguientes premisas no corresponde a una característica de los
+                    estudios etnográficos?</label><br>
+                <input type="checkbox" id="opcion9_1" name="pregunta9" value="opcion9_1"
+                    onclick="checkAnswer('opcion9_1', 'pregunta9', 'respuesta9')">
+                <label for="opcion9_1">a. Un investigación etnográfica se caracteriza por ser holística y
+                    naturalista.</label><br>
+                <input type="checkbox" id="opcion9_2" name="pregunta9" value="opcion9_2"
+                    onclick="checkAnswer('opcion9_2', 'pregunta9', 'respuesta9')">
+                <label for="opcion9_2">b. Los estudios etnográficos tienen una permanencia relativamente
+                    persistente.</label><br>
+                <input type="checkbox" id="opcion9_3" name="pregunta9" value="opcion9_3"
+                    onclick="checkAnswer('opcion9_3', 'pregunta9', 'respuesta9')">
+                <label for="opcion9_3">c. Los estudios etnográficos son de carácter deductivo.</label><br>
+                <input type="checkbox" id="opcion9_4" name="pregunta9" value="opcion9_4"
+                    onclick="checkAnswer('opcion9_4', 'pregunta9', 'respuesta9')">
+                <label for="opcion9_4">d. Los estudios etnográficos tienen un carácter fenomenológico.</label><br>
+                <input type="checkbox" id="opcion9_5" name="pregunta9" value="opcion9_5"
+                    onclick="checkAnswer('opcion9_5', 'pregunta9', 'respuesta9')">
+                <label for="opcion9_5">e. Los estudios etnográficos siguen un modelo interactivo.</label><br>
+            </div>
+            <div id="respuesta9"></div>
+
+            <div class="cont">
+                <label for="pregunta10" class="question">10. ¿Cuál de las siguientes opciones no está relacionada con las características
+                    de los estudios correlacionales?</label><br>
+                <input type="radio" id="opcion10_1" name="pregunta10" value="opcion10_1"
+                    onclick="checkAnswer('opcion10_1', 'pregunta10', 'respuesta10')">
+                <label for="opcion10_1">a. Analizan, por ejemplo, si un aumento o disminución en una variable coincide
+                    con un aumento o disminución en la otra variable.</label><br>
+                <input type="radio" id="opcion10_2" name="pregunta10" value="opcion10_2"
+                    onclick="checkAnswer('opcion10_2', 'pregunta10', 'respuesta10')">
+                <label for="opcion10_2">b. Indagan el grado de relación que guardan dos o más conceptos, categorías o
+                    variables.</label><br>
+                <input type="radio" id="opcion10_3" name="pregunta10" value="opcion10_3"
+                    onclick="checkAnswer('opcion10_3', 'pregunta10', 'respuesta10')">
+                <label for="opcion10_3">c. Estudian la relación entre una variable independiente y la variable
+                    dependiente.</label><br>
+                <input type="radio" id="opcion10_4" name="pregunta10" value="opcion10_4"
+                    onclick="checkAnswer('opcion10_4', 'pregunta10', 'respuesta10')">
+                <label for="opcion10_4">d. Determinan si dos variables están correlacionadas o no.</label><br>
+                <input type="radio" id="opcion10_5" name="pregunta10" value="opcion10_5"
+                    onclick="checkAnswer('opcion10_5', 'pregunta10', 'respuesta10')">
+                <label for="opcion10_5">e. Determinan por medio de experimentos el grado de relación entre las
+                    variables.</label><br>
+            </div>
+            <div id="respuesta10"></div>
+
+            <div class="cont">
+                <label for="pregunta11" class="question">11. Una investigación de métodos mixtos incluye necesariamente métodos
+                    cualitativos y cuantitativos.</label><br>
+                <input type="radio" id="opcion11_1" name="pregunta11" value="opcion11_1"
+                    onclick="checkAnswer('opcion11_1', 'pregunta11', 'respuesta11')">
+                <label for="opcion11_1">Verdadero</label><br>
+                <input type="radio" id="opcion11_2" name="pregunta11" value="opcion11_2"
+                    onclick="checkAnswer('opcion11_2', 'pregunta11', 'respuesta11')">
+                <label for="opcion11_2">Falso</label><br>
+            </div>
+            <div id="respuesta11"></div>
+
+            <div class="cont">
+                <label for="pregunta12" class="question">12. ¿El método de investigación Etnográfico sustenta uno de los protocolos más
+                    importantes en la investigación cualitativa?</label><br>
+                <input type="radio" id="opcion12_1" name="pregunta12" value="opcion12_1"
+                    onclick="checkAnswer('opcion12_1', 'pregunta12', 'respuesta12')">
+                <label for="opcion12_1">Verdadero</label><br>
+                <input type="radio" id="opcion12_2" name="pregunta12" value="opcion12_2"
+                    onclick="checkAnswer('opcion12_2', 'pregunta12', 'respuesta12')">
+                <label for="opcion12_2">Falso</label><br>
+            </div>
+            <div id="respuesta12"></div>
+
+            <div class="cont">
+                <label for="pregunta13" class="question">13. ¿Cuál de las siguientes afirmaciones no se corresponde con las
+                    características de los estudios no experimentales?</label><br>
+                <input type="radio" id="opcion13_1" name="pregunta13" value="opcion13_1"
+                    onclick="checkAnswer('opcion13_1', 'pregunta13', 'respuesta13')">
+                <label for="opcion13_1">a. El contexto donde se desarrolla el fenómeno es controlado en base a las
+                    variables de interés.</label><br>
+                <input type="radio" id="opcion13_2" name="pregunta13" value="opcion13_2"
+                    onclick="checkAnswer('opcion13_2', 'pregunta13', 'respuesta13')">
+                <label for="opcion13_2">b. Se dedican al estudio de situaciones ya existentes, que se desarrollan bajo
+                    sus propias leyes o reglas internas.</label><br>
+                <input type="radio" id="opcion13_3" name="pregunta13" value="opcion13_3"
+                    onclick="checkAnswer('opcion13_3', 'pregunta13', 'respuesta13')">
+                <label for="opcion13_3">c. Al tratarse de estudios con enfoques cuantitativos, si hay un análisis
+                    numérico de los datos, pero estos se obtienen por observación y, posteriormente, se hace la
+                    interpretación de los mismos.</label><br>
+                <input type="radio" id="opcion13_4" name="pregunta13" value="opcion13_4"
+                    onclick="checkAnswer('opcion13_4', 'pregunta13', 'respuesta13')">
+                <label for="opcion13_4">d. Se enfocan en la observación pasiva de fenómenos que se desarrollan en sus
+                    ambientes naturales, sin la intervención del investigador.</label><br>
+                <input type="radio" id="opcion13_5" name="pregunta13" value="opcion13_5"
+                    onclick="checkAnswer('opcion13_5', 'pregunta13', 'respuesta13')">
+                <label for="opcion13_5">e. Son investigaciones cuyos diseños metodológicos que no manipulan ni controlan
+                    variables de estudio.</label><br>
+            </div>
+            <div id="respuesta13"></div>
+
+            <div class="cont">
+                <label for="pregunta14" class="question">14. El método hipotético deductivo obliga al científico a combinar:</label><br>
+                <input type="radio" id="opcion14_1" name="pregunta14" value="opcion14_1"
+                    onclick="checkAnswer('opcion14_1', 'pregunta14', 'respuesta14')">
+                <label for="opcion14_1">a. La reflexión racional o momento racional con la experimentación.</label><br>
+                <input type="radio" id="opcion14_2" name="pregunta14" value="opcion14_2"
+                    onclick="checkAnswer('opcion14_2', 'pregunta14', 'respuesta14')">
+                <label for="opcion14_2">b. La reflexión racional o momento racional con la correlación de las variables
+                    que describen al fenómeno.</label><br>
+                <input type="radio" id="opcion14_3" name="pregunta14" value="opcion14_3"
+                    onclick="checkAnswer('opcion14_3', 'pregunta14', 'respuesta14')">
+                <label for="opcion14_3">c. La reflexión racional o momento racional con la observación de la realidad o
+                    momento empírico.</label><br>
+                <input type="radio" id="opcion14_4" name="pregunta14" value="opcion14_4"
+                    onclick="checkAnswer('opcion14_4', 'pregunta14', 'respuesta14')">
+                <label for="opcion14_4">d. La reflexión racional o momento racional con la descripción del
+                    fenómeno.</label><br>
+            </div>
+            <div id="respuesta14"></div>
+
+            <div class="cont">
+                <label for="pregunta15" class="question">15. ¿Cuáles de los siguientes postulados no obedecen a las características de
+                    los estudios descriptivos?</label><br>
+                <input type="radio" id="opcion15_1" name="pregunta15" value="opcion15_1"
+                    onclick="checkAnswer('opcion15_1', 'pregunta15', 'respuesta15')">
+                <label for="opcion15_1">a. Se centran en recolectar datos que describan la situación tal y como
+                    es.</label><br>
+                <input type="radio" id="opcion15_2" name="pregunta15" value="opcion15_2"
+                    onclick="checkAnswer('opcion15_2', 'pregunta15', 'respuesta15')">
+                <label for="opcion15_2">b. Se aplican para deducir un bien o circunstancia que se esté
+                    presentando.</label><br>
+                <input type="radio" id="opcion15_3" name="pregunta15" value="opcion15_3"
+                    onclick="checkAnswer('opcion15_3', 'pregunta15', 'respuesta15')">
+                <label for="opcion15_3">c. Determinan la viabilidad de una investigación.</label><br>
+                <input type="radio" id="opcion15_4" name="pregunta15" value="opcion15_4"
+                    onclick="checkAnswer('opcion15_4', 'pregunta15', 'respuesta15')">
+                <label for="opcion15_4">d. Corresponden con los estudios de serie de casos y los estudios de
+                    prevalencia.</label><br>
+                <input type="radio" id="opcion15_5" name="pregunta15" value="opcion15_5"
+                    onclick="checkAnswer('opcion15_5', 'pregunta15', 'respuesta15')">
+                <label for="opcion15_5">e. Describen todas las dimensiones del órgano u objeto a estudiar.</label><br>
+            </div>
+            <div id="respuesta15"></div>
+
+
+            <div class="cont">
+                <label for="pregunta16" class="question">16. ¿Cuál de los siguientes postulados no obedecen a las características de los
+                    métodos lógicos deductivos?</label><br>
+                <input type="radio" id="opcion16_1" name="pregunta16" value="opcion16_1"
+                    onclick="checkAnswer('opcion16_1', 'pregunta16', 'respuesta16')">
+                <label for="opcion16_1">a. Común en las disciplinas relacionadas con el saber.</label><br>
+                <input type="radio" id="opcion16_2" name="pregunta16" value="opcion16_2"
+                    onclick="checkAnswer('opcion16_2', 'pregunta16', 'respuesta16')">
+                <label for="opcion16_2">b. Su procedimiento parte de una conclusión, ley o principio general, y
+                    desciende a los casos particulares, secuencias y aplicaciones.</label><br>
+                <input type="radio" id="opcion16_3" name="pregunta16" value="opcion16_3"
+                    onclick="checkAnswer('opcion16_3', 'pregunta16', 'respuesta16')">
+                <label for="opcion16_3">c. Conjunto de reglas que se han de seguir o emplear para redescubrir la
+                    verdad.</label><br>
+                <input type="radio" id="opcion16_4" name="pregunta16" value="opcion16_4"
+                    onclick="checkAnswer('opcion16_4', 'pregunta16', 'respuesta16')">
+                <label for="opcion16_4">d. Se basa en técnicas meramente cuantitativas, pero rara vez
+                    cualitativas.</label><br>
+                <input type="radio" id="opcion16_5" name="pregunta16" value="opcion16_5"
+                    onclick="checkAnswer('opcion16_5', 'pregunta16', 'respuesta16')">
+                <label for="opcion16_5">e. Su procedimiento se basa en: Un enunciado de ley o principio, Fijación,
+                    Demostración, Síntesis, Sinopsis y Aplicación.</label><br>
+            </div>
+            <div id="respuesta16"></div>
+
+            <div class="cont">
+                <label for="pregunta17" class="question">17. Un experimento en Ingeniería de Software representa una investigación
+                    empírica en la que manipula una variable del entorno o fenómeno bajo estudio para medir el efecto
+                    que tiene sobre otra variable. La variable manipulada se denomina variable independiente o factor y
+                    la variable afectada se denomina variable dependiente.</label><br>
+                <input type="radio" id="opcion17_1" name="pregunta17" value="opcion17_1"
+                    onclick="checkAnswer('opcion17_1', 'pregunta17', 'respuesta17')">
+                <label for="opcion17_1">Verdadero</label><br>
+                <input type="radio" id="opcion17_2" name="pregunta17" value="opcion17_2"
+                    onclick="checkAnswer('opcion17_2', 'pregunta17', 'respuesta17')">
+                <label for="opcion17_2">Falso</label><br>
+            </div>
+            <div id="respuesta17"></div>
+
+            <div class="cont">
+                <label for="pregunta18" class="question">18. El método Delphi es una técnica prospectiva estructurada que se basa en un
+                    panel de expertos que se utiliza para:</label><br>
+                <input type="radio" id="opcion18_1" name="pregunta18" value="opcion18_1"
+                    onclick="checkAnswer('opcion18_1', 'pregunta18', 'respuesta18')">
+                <label for="opcion18_1">a. Obtener información esencialmente cualitativa, pero relativamente precisa,
+                    acerca del futuro.</label><br>
+                <input type="radio" id="opcion18_2" name="pregunta18" value="opcion18_2"
+                    onclick="checkAnswer('opcion18_2', 'pregunta18', 'respuesta18')">
+                <label for="opcion18_2">b. Obtener información esencialmente cuantitativa, pero relativamente precisa,
+                    acerca del pasado.</label><br>
+                <input type="radio" id="opcion18_3" name="pregunta18" value="opcion18_3"
+                    onclick="checkAnswer('opcion18_3', 'pregunta18', 'respuesta18')">
+                <label for="opcion18_3">c. Obtener información esencialmente cuantitativa, pero relativamente precisa,
+                    acerca del futuro.</label><br>
+                <input type="radio" id="opcion18_4" name="pregunta18" value="opcion18_4"
+                    onclick="checkAnswer('opcion18_4', 'pregunta18', 'respuesta18')">
+                <label for="opcion18_4">d. Obtener información esencialmente cualitativa, pero relativamente precisa,
+                    acerca del pasado.</label><br>
+            </div>
+            <div id="respuesta18"></div>
+
+
+            <div class="cont">
+                <label for="pregunta19" class="question">19. ¿Cuál de los siguientes postulados no obedecen a las características de los
+                    métodos lógicos deductivos?</label><br>
+                <input type="radio" id="opcion19_1" name="pregunta19" value="opcion19_1"
+                    onclick="checkAnswer('opcion19_1', 'pregunta19', 'respuesta19')">
+                <label for="opcion19_1">a. Conjunto de reglas que se han de seguir o emplear para redescubrir la
+                    verdad.</label><br>
+                <input type="radio" id="opcion19_2" name="pregunta19" value="opcion19_2"
+                    onclick="checkAnswer('opcion19_2', 'pregunta19', 'respuesta19')">
+                <label for="opcion19_2">b. Común en las disciplinas relacionadas con el saber.</label><br>
+                <input type="radio" id="opcion19_3" name="pregunta19" value="opcion19_3"
+                    onclick="checkAnswer('opcion19_3', 'pregunta19', 'respuesta19')">
+                <label for="opcion19_3">c. Su procedimiento parte de una conclusión, ley o principio general, y
+                    desciende a los casos particulares, secuencias y aplicaciones.</label><br>
+                <input type="radio" id="opcion19_4" name="pregunta19" value="opcion19_4"
+                    onclick="checkAnswer('opcion19_4', 'pregunta19', 'respuesta19')">
+                <label for="opcion19_4">d. Su procedimiento se basa en: Un enunciado de ley o principio, Fijación,
+                    Demostración, Síntesis, Sinopsis y Aplicación.</label><br>
+                <input type="radio" id="opcion19_5" name="pregunta19" value="opcion19_5"
+                    onclick="checkAnswer('opcion19_5', 'pregunta19', 'respuesta19')">
+                <label for="opcion19_5">e. Se basa en técnicas meramente cuantitativas, pero rara vez
+                    cualitativas.</label><br>
+            </div>
+            <div id="respuesta19"></div>
+
+            <div class="cont">
+                <label for="pregunta20" class="question">20. ¿Cuál de las siguientes afirmaciones no corresponde con las características
+                    de los estudios analíticos?</label><br>
+                <input type="radio" id="opcion20_1" name="pregunta20" value="opcion20_1"
+                    onclick="checkAnswer('opcion20_1', 'pregunta20', 'respuesta20')">
+                <label for="opcion20_1">a. Los subtipos de este estudio son: Comparativos representativos, caso de
+                    control y de cohorte.</label><br>
+                <input type="radio" id="opcion20_2" name="pregunta20" value="opcion20_2"
+                    onclick="checkAnswer('opcion20_2', 'pregunta20', 'respuesta20')">
+                <label for="opcion20_2">b. Se establecen relaciones entre las variables, de asociación o de
+                    causalidad.</label><br>
+                <input type="radio" id="opcion20_3" name="pregunta20" value="opcion20_3"
+                    onclick="checkAnswer('opcion20_3', 'pregunta20', 'respuesta20')">
+                <label for="opcion20_3">c. Generalmente se diseñan comparando dos o más grupos, existiendo un grupo en
+                    el que esta presente el problema y otro al que no afecta el problema.</label><br>
+                <input type="radio" id="opcion20_4" name="pregunta20" value="opcion20_4"
+                    onclick="checkAnswer('opcion20_4', 'pregunta20', 'respuesta20')">
+                <label for="opcion20_4">d. Son investigaciones cuyo diseño permite establecer causas, y/o factores de
+                    riesgo que determinan el problema o con los que se asocia el problema.</label><br>
+                <input type="radio" id="opcion20_5" name="pregunta20" value="opcion20_5"
+                    onclick="checkAnswer('opcion20_5', 'pregunta20', 'respuesta20')">
+                <label for="opcion20_5">e. Se establecen relaciones de correlación entre las causas del
+                    efecto.</label><br>
+            </div>
+            <div id="respuesta20"></div>
+
+            <div class="cont">
+                <label for="pregunta21" class="question">21. ¿Cuál de las siguientes afirmaciones no se corresponde con las
+                    características de los estudios no experimentales?</label><br>
+                <input type="radio" id="opcion21_1" name="pregunta21" value="opcion21_1"
+                    onclick="checkAnswer('opcion21_1', 'pregunta21', 'respuesta21')">
+                <label for="opcion21_1">a. El contexto donde se desarrolla el fenómeno es controlado en base a las
+                    variables de interés.</label><br>
+                <input type="radio" id="opcion21_2" name="pregunta21" value="opcion21_2"
+                    onclick="checkAnswer('opcion21_2', 'pregunta21', 'respuesta21')">
+                <label for="opcion21_2">b. Son investigaciones cuyos diseños metodológicos que no manipulan ni controlan
+                    variables de estudio.</label><br>
+                <input type="radio" id="opcion21_3" name="pregunta21" value="opcion21_3"
+                    onclick="checkAnswer('opcion21_3', 'pregunta21', 'respuesta21')">
+                <label for="opcion21_3">c. Se enfocan en la observación pasiva de fenómenos que se desarrollan en sus
+                    ambientes naturales, sin la intervención del investigador.</label><br>
+                <input type="radio" id="opcion21_4" name="pregunta21" value="opcion21_4"
+                    onclick="checkAnswer('opcion21_4', 'pregunta21', 'respuesta21')">
+                <label for="opcion21_4">d. Se dedican al estudio de situaciones ya existentes, que se desarrollan bajo
+                    sus propias leyes o reglas internas.</label><br>
+                <input type="radio" id="opcion21_5" name="pregunta21" value="opcion21_5"
+                    onclick="checkAnswer('opcion21_5', 'pregunta21', 'respuesta21')">
+                <label for="opcion21_5">e. Al tratarse de estudios con enfoques cuantitativos, si hay un análisis
+                    numérico de los datos, pero estos se obtienen por observación y, posteriormente, se hace la
+                    interpretación de los mismos.</label><br>
+            </div>
+            <div id="respuesta21"></div>
+
+
+            <div class="cont">
+                <label for="pregunta22" class="question">22. ¿Cuál de las siguientes opciones no está relacionada con las características
+                    de los estudios exploratorios o formulativos?</label><br>
+                <input type="radio" id="opcion22_1" name="pregunta22" value="opcion22_1"
+                    onclick="checkAnswer('opcion22_1', 'pregunta22', 'respuesta22')">
+                <label for="opcion22_1">a. Permiten obtener nuevos datos y elementos para formular con precisión las
+                    preguntas de investigación.</label><br>
+                <input type="radio" id="opcion22_2" name="pregunta22" value="opcion22_2"
+                    onclick="checkAnswer('opcion22_2', 'pregunta22', 'respuesta22')">
+                <label for="opcion22_2">b. Posibilitan una investigación más precisa o el desarrollo de una
+                    hipótesis.</label><br>
+                <input type="radio" id="opcion22_3" name="pregunta22" value="opcion22_3"
+                    onclick="checkAnswer('opcion22_3', 'pregunta22', 'respuesta22')">
+                <label for="opcion22_3">c. Dirigidos a la formulación más precisa de un problema de
+                    investigación.</label><br>
+                <input type="radio" id="opcion22_4" name="pregunta22" value="opcion22_4"
+                    onclick="checkAnswer('opcion22_4', 'pregunta22', 'respuesta22')">
+                <label for="opcion22_4">d. Permiten realizar la validación de un supuesto de investigación.</label><br>
+                <input type="radio" id="opcion22_5" name="pregunta22" value="opcion22_5"
+                    onclick="checkAnswer('opcion22_5', 'pregunta22', 'respuesta22')">
+                <label for="opcion22_5">e. Adecuados para cuando se carece de información suficiente y de conocimiento
+                    previo del objeto de estudio.</label><br>
+            </div>
+            <div id="respuesta22"></div>
+
+            <div class="cont">
+                <label for="pregunta23" class="question">23. ¿Cuál de los siguientes postulados no obedecen a las características del
+                    método lógico inductivo?</label><br>
+                <input type="radio" id="opcion23_1" name="pregunta23" value="opcion23_1"
+                    onclick="checkAnswer('opcion23_1', 'pregunta23', 'respuesta23')">
+                <label for="opcion23_1">a. Permite llegar a formular leyes científicas a partir de la observación y
+                    postulación de hipótesis.</label><br>
+                <input type="radio" id="opcion23_2" name="pregunta23" value="opcion23_2"
+                    onclick="checkAnswer('opcion23_2', 'pregunta23', 'respuesta23')">
+                <label for="opcion23_2">b. Se puede realizar la comprobación y demostración de leyes ya
+                    postuladas.</label><br>
+                <input type="radio" id="opcion23_3" name="pregunta23" value="opcion23_3"
+                    onclick="checkAnswer('opcion23_3', 'pregunta23', 'respuesta23')">
+                <label for="opcion23_3">c. Su procedimiento se compone de observación, hipótesis, investigación y
+                    conclusión.</label><br>
+                <input type="radio" id="opcion23_4" name="pregunta23" value="opcion23_4"
+                    onclick="checkAnswer('opcion23_4', 'pregunta23', 'respuesta23')">
+                <label for="opcion23_4">d. Se basa en técnicas meramente cuantitativas, y rara vez en
+                    cualitativas.</label><br>
+                <input type="radio" id="opcion23_5" name="pregunta23" value="opcion23_5"
+                    onclick="checkAnswer('opcion23_5', 'pregunta23', 'respuesta23')">
+                <label for="opcion23_5">e. Su procedimiento parte de conocimientos particulares para llegar a una
+                    conclusión generalizada.</label><br>
+            </div>
+            <div id="respuesta23"></div>
+
+            <div class="cont">
+                <label for="pregunta24" class="question">24. Los estudios correlacionales tienen el propósito de:</label><br>
+                <input type="radio" id="opcion24_1" name="pregunta24" value="opcion24_1"
+                    onclick="checkAnswer('opcion24_1', 'pregunta24', 'respuesta24')">
+                <label for="opcion24_1">a. Medir el grado de relación que exista entre 2 o más conceptos o variables. La
+                    correlación puede ser neutra.</label><br>
+                <input type="radio" id="opcion24_2" name="pregunta24" value="opcion24_2"
+                    onclick="checkAnswer('opcion24_2', 'pregunta24', 'respuesta24')">
+                <label for="opcion24_2">b. Identificar la posible relación que exista entre 2 o más conceptos o
+                    variables. La correlación puede ser únicamente descrita.</label><br>
+                <input type="radio" id="opcion24_3" name="pregunta24" value="opcion24_3"
+                    onclick="checkAnswer('opcion24_3', 'pregunta24', 'respuesta24')">
+                <label for="opcion24_3">c. Medir el grado de relación que exista entre una variable. La correlación
+                    puede ser positiva o negativa.</label><br>
+                <input type="radio" id="opcion24_4" name="pregunta24" value="opcion24_4"
+                    onclick="checkAnswer('opcion24_4', 'pregunta24', 'respuesta24')">
+                <label for="opcion24_4">d. Medir el grado de relación que exista entre 2 o más conceptos o variables. La
+                    correlación puede ser positiva o negativa.</label><br>
+            </div>
+            <div id="respuesta24"></div>
+
+            <div class="cont">
+                <label for="pregunta25" class="question">25. Los estudios exploratorios se realizan con el objetivo de:</label><br>
+                <input type="radio" id="opcion25_1" name="pregunta25" value="opcion25_1"
+                    onclick="checkAnswer('opcion25_1', 'pregunta25', 'respuesta25')">
+                <label for="opcion25_1">a. Examinar un problema de investigación del cual se tienen presunciones, pero
+                    pocas dudas porque ya ha sido abordado antes.</label><br>
+                <input type="radio" id="opcion25_2" name="pregunta25" value="opcion25_2"
+                    onclick="checkAnswer('opcion25_2', 'pregunta25', 'respuesta25')">
+                <label for="opcion25_2">b. Examinar un tema o problema de investigación poco cualquiera, del cual se
+                    tiene un vasto conocimiento porque ha sido abordado antes.</label><br>
+                <input type="radio" id="opcion25_3" name="pregunta25" value="opcion25_3"
+                    onclick="checkAnswer('opcion25_3', 'pregunta25', 'respuesta25')">
+                <label for="opcion25_3">c. Examinar un tema o problema de investigación conocido, del cual se tienen
+                    pocas dudas y ya ha sido abordado.</label><br>
+                <input type="radio" id="opcion25_4" name="pregunta25" value="opcion25_4"
+                    onclick="checkAnswer('opcion25_4', 'pregunta25', 'respuesta25')">
+                <label for="opcion25_4">d. Examinar un tema o problema de investigación poco estudiado, del cual se
+                    tienen muchas dudas o no se ha abordado antes.</label><br>
+            </div>
+            <div id="respuesta25"></div>
+
+            <div class="cont">
+                <label for="pregunta26" class="question">26. Una investigación de métodos mixtos incluye dos tipos de métodos, de acuerdo
+                    con dos posibilidades: "simultánea" para combinarlos (o fusionarlos), o "secuencial" para priorizar
+                    uno sobre el otro, o bien para insertar uno en el otro.</label><br>
+                <input type="radio" id="opcion26_1" name="pregunta26" value="opcion26_1"
+                    onclick="checkAnswer('opcion26_1', 'pregunta26', 'respuesta26')">
+                <label for="opcion26_1">Verdadero</label><br>
+                <input type="radio" id="opcion26_2" name="pregunta26" value="opcion26_2"
+                    onclick="checkAnswer('opcion26_2', 'pregunta26', 'respuesta26')">
+                <label for="opcion26_2">Falso</label><br>
+            </div>
+            <div id="respuesta26"></div>
+
+            <div class="cont">
+                <label for="pregunta27" class="question">27. Identifique la(s) proposición(es) que son verdadera(s):</label><br>
+                <input type="radio" id="opcion27_1" name="pregunta27" value="opcion27_1"
+                    onclick="checkAnswer('opcion27_1', 'pregunta27', 'respuesta27')">
+                <label for="opcion27_1">a. En el método deductivo lógico se parte de una conclusión, ley o principio
+                    específico y asciende a los casos generales.</label><br>
+                <input type="radio" id="opcion27_2" name="pregunta27" value="opcion27_2"
+                    onclick="checkAnswer('opcion27_2', 'pregunta27', 'respuesta27')">
+                <label for="opcion27_2">b. En el método deductivo lógico se parte de una conclusión, ley o principio
+                    general y se generaliza aún más.</label><br>
+                <input type="radio" id="opcion27_3" name="pregunta27" value="opcion27_3"
+                    onclick="checkAnswer('opcion27_3', 'pregunta27', 'respuesta27')">
+                <label for="opcion27_3">c. En el método deductivo lógico se parte de una conclusión, ley o principio
+                    general y desciende a los casos particulares.</label><br>
+                <input type="radio" id="opcion27_4" name="pregunta27" value="opcion27_4"
+                    onclick="checkAnswer('opcion27_4', 'pregunta27', 'respuesta27')">
+                <label for="opcion27_4">d. En el método deductivo lógico se parte de una conclusión, ley o principio
+                    específico y desciende a los casos más particulares.</label><br>
+            </div>
+            <div id="respuesta27"></div>
+
+            <div class="cont">
+                <label for="pregunta28" class="question">28. Action Research es uno de los métodos de investigación cualitativa
+                    proveniente de las ciencias sociales más utilizados en los sistemas de información e Ingeniería de
+                    Software.</label><br>
+                <input type="radio" id="opcion28_1" name="pregunta28" value="opcion28_1"
+                    onclick="checkAnswer('opcion28_1', 'pregunta28', 'respuesta28')">
+                <label for="opcion28_1">Verdadero</label><br>
+                <input type="radio" id="opcion28_2" name="pregunta28" value="opcion28_2"
+                    onclick="checkAnswer('opcion28_2', 'pregunta28', 'respuesta28')">
+                <label for="opcion28_2">Falso</label><br>
+            </div>
+            <div id="respuesta28"></div>
+
+
+            <div class="cont">
+                <label for="pregunta29" class="question">29. Los estudios explicativos van más allá de la descripción, estos
+                    buscan:</label><br>
+                <input type="radio" id="opcion29_1" name="pregunta29" value="opcion29_1"
+                    onclick="checkAnswer('opcion29_1', 'pregunta29', 'respuesta29')">
+                <label for="opcion29_1">a. Describir cómo es y cómo se manifiesta determinado fenómeno.</label><br>
+                <input type="radio" id="opcion29_2" name="pregunta29" value="opcion29_2"
+                    onclick="checkAnswer('opcion29_2', 'pregunta29', 'respuesta29')">
+                <label for="opcion29_2">b. Explicar por qué ocurre un fenómeno y en qué condiciones se da
+                    éste.</label><br>
+                <input type="radio" id="opcion29_3" name="pregunta29" value="opcion29_3"
+                    onclick="checkAnswer('opcion29_3', 'pregunta29', 'respuesta29')">
+                <label for="opcion29_3">c. Medir el grado de relación que exista entre 2 a más conceptos o
+                    variables.</label><br>
+                <input type="radio" id="opcion29_4" name="pregunta29" value="opcion29_4"
+                    onclick="checkAnswer('opcion29_4', 'pregunta29', 'respuesta29')">
+                <label for="opcion29_4">d. Explorar las causas de los eventos físicos o sociales.</label><br>
+            </div>
+            <div id="respuesta29"></div>
+
+
+        </fieldset>
+    </form>
+</center>
+
+    <script>
+        function checkAnswer(selectedOption, questionId, divId) {
+            var respuestaCorrecta;
+            var respuestaCorrecta2;
+            var mensaje;
+
+            switch (questionId) {
+                case 'pregunta1':
+                    respuestaCorrecta = 'opcion1_4';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta2':
+                    respuestaCorrecta = 'opcion2_1';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta3':
+                    respuestaCorrecta = 'opcion3_2';
+                    respuestaCorrecta2 = 'opcion3_4';
+
+                    if (document.getElementById(respuestaCorrecta).checked && document.getElementById(respuestaCorrecta2).checked) {
+                        mensaje = '¡Correcto!';
+                    } else {
+                        mensaje = 'Incorrecto';
+                    }
+                    break;
+                case 'pregunta4':
+                    respuestaCorrecta = 'opcion4_5';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta5':
+                    respuestaCorrecta = 'opcion5_1';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta6':
+                    respuestaCorrecta = 'opcion6_3';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta7':
+                    respuestaCorrecta = 'opcion7_4';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta8':
+                    respuestaCorrecta = 'opcion8_4';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta9':
+                    respuestaCorrecta = 'opcion9_3';
+                    respuestaCorrecta2 = 'opcion9_5';
+
+                    if (document.getElementById(respuestaCorrecta).checked && document.getElementById(respuestaCorrecta2).checked) {
+                        mensaje = '¡Correcto!';
+                    } else {
+                        mensaje = 'Incorrecto';
+                    }
+                    break;
+                case 'pregunta10':
+                    respuestaCorrecta = 'opcion10_5';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta11':
+                    respuestaCorrecta = 'opcion11_2';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta12':
+                    respuestaCorrecta = 'opcion12_1';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta13':
+                    respuestaCorrecta = 'opcion13_1';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta14':
+                    respuestaCorrecta = 'opcion14_3';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta15':
+                    respuestaCorrecta = 'opcion15_2';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta16':
+                    respuestaCorrecta = 'opcion16_4';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta17':
+                    respuestaCorrecta = 'opcion17_1';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta18':
+                    respuestaCorrecta = 'opcion18_1';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta19':
+                    respuestaCorrecta = 'opcion19_5';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta20':
+                    respuestaCorrecta = 'opcion20_2';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta21':
+                    respuestaCorrecta = 'opcion21_5';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta22':
+                    respuestaCorrecta = 'opcion22_2';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta23':
+                    respuestaCorrecta = 'opcion23_4';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta24':
+                    respuestaCorrecta = 'opcion24_4';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta25':
+                    respuestaCorrecta = 'opcion25_4';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta26':
+                    respuestaCorrecta = 'opcion26_1';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta27':
+                    respuestaCorrecta = 'opcion27_3';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta28':
+                    respuestaCorrecta = 'opcion28_1';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                case 'pregunta29':
+                    respuestaCorrecta = 'opcion29_2';
+                    mensaje = (selectedOption === respuestaCorrecta) ? '¡Correcto!' : 'Incorrecto';
+                    break;
+                default:
+                    respuestaCorrecta = '';
+                    mensaje = 'Respuesta no definida';
+            }
+
+            var divRespuesta = document.getElementById(divId);
+            divRespuesta.innerHTML = mensaje;
+            divRespuesta.className = (mensaje === '¡Correcto!') ? 'correcto' : 'incorrecto';
+        }
+    </script>
+
+</body>
+
+</html>
