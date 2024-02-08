@@ -1,0 +1,334 @@
+{
+  "preguntas": [
+    {
+      "id": "pregunta1",
+      "pregunta": "Identifique la(s) proposicion(es) que son verdadera(s):",
+      "opciones": {
+        "opcion1_1": "Un experimento es una investigación informal, rigurosa y controlada en la que a las variables en estudio se les dan un solo valor y se evalúa el efecto ha dicho cada valor.",
+        "opcion1_2": "Un experimento es una investigación formal, rigurosa y controlada en la que a las variables en estudio se les dan diferentes valores para evaluar el efecto ha tenido cada valor.",
+        "opcion1_3": "Un experimento es una investigación formal y poco rigurosa en la que a las variables en estudio se les dan diferentes valores y se evalúa el efecto ha tenido cada valor.",
+        "opcion1_4": "Un experimento es una investigación formal, rigurosa y controlada en la que a las variables en estudio se les dan diferentes valores para evaluar el efecto ha tenido cada valor."
+      },
+      "respuestaCorrecta": "opcion1_4"
+    },
+    {
+      "id": "pregunta2",
+      "pregunta": "Action Research es uno de los métodos de investigación cualitativa proveniente de las ciencias sociales más utilizados en ls sistemas de información e Ingenieria de Software.",
+      "opciones": {
+        "opcion2_1": "Verdadero",
+        "opcion2_2": "Falso"
+      },
+      "respuestaCorrecta": "opcion2_1"
+    },
+    {
+      "id": "pregunta3",
+      "pregunta": "¿Cuál(es) de los siguientes postulados no corresponden a una una característica del método de investigación Action Research?",
+      "opciones": {
+        "opcion3_1": "Action Research se leva a cabo en un contexto de colaboración de las personas implicadas en un contexto determinado",
+        "opcion3_2": "Somete a prueba las prácticas, las ideas y las suposiciones. Action Research no somete a prueba las prácticas, las ideas y las suposiciones de un contexto específico.",
+        "opcion3_3": "Action Research lleva a cabo una investigación iterativa introspectiva de ciclos de planificación, acción, observación y reflexión.",
+        "opcion3_4": "Action Research procede regresivamente a cambios justos.",
+        "opcion3_5": "Action Research se caracteriza porque las personas trabajan o participan con la intención de mejorar sus propias prácticas."
+      },
+      "respuestaCorrecta": ["opcion3_2", "opcion3_4"]
+    },
+    {
+      "id": "pregunta4",
+      "pregunta": "¿Cuál de las siguientes afirmaciones no se corresponde con las características de los estudios experimentales?",
+      "opciones": {
+        "opcion4_1": "Presenta dificultades en la generalización debido a la selección y o a la propia rigidez de la intervención.",
+        "opcion4_2": "Es un ensayo analítico y prospectivo caracterizado por la manipulación artificial del factor de estudio por el investigador y por la aleatorización de los casos o sujetos de prueba.",
+        "opcion4_3": "Son repetibles y comparables con otras experiencias, pero también suponen un coste elevado.",
+        "opcion4_4": "Existe menos posibilidad de sesgos debido a la selección aleatoria de los grupos.",
+        "opcion4_5": "Estos estudios son muy recomendables debido a su bajo grado de complejidad y al mínimo nivel de conocimientos que requieren."
+      },
+      "respuestaCorrecta": "opcion4_5"
+    },
+    {
+      "id": "pregunta5",
+      "pregunta": "El método lógico inductivo se utiliza para:",
+      "opciones": {
+        "opcion5_1": "Partiendo de conocimientos particulares llegar a una conclusión generalizada.",
+        "opcion5_2": "Partiendo de conocimientos generales llegar a una conclusión particular.",
+        "opcion5_3": "Partiendo de conocimientos particulares llegar a una conclusión más particular.",
+        "opcion5_4": "Partiendo de conocimientos generales llegar a una conclusión más general."
+      },
+      "respuestaCorrecta": "opcion5_1"
+    },
+    {
+      "id": "pregunta6",
+      "pregunta": "Identifique la(s) proposicion(es) que son verdadera(s):",
+      "opciones": {
+        "opcion6_1": "Un estudio descriptivo tiene el propósito de medir el grado de relación que exista entre 2 o más conceptos o variables.",
+        "opcion6_2": "Los estudios descriptivos buscan especificar las propiedades poco importantes de personas, grupos, comunidades, etc.",
+        "opcion6_3": "El propósito de un estudio descriptivo es describir situaciones y eventos. Decir cómo es y cómo se manifiesta determinado fenómeno.",
+        "opcion6_4": "Los estudios descriptivos sirven para preparar el terreno y por lo común anteceden a investigaciones con alcances exploratorias, correlacionales o explicativas."
+      },
+      "respuestaCorrecta": "opcion6_3"
+    },
+    {
+      "id": "pregunta7",
+      "pregunta": "Los estudios correlacionales tienen el propósito de:",
+      "opciones": {
+        "opcion7_1": "Medir el grado de relación que exista entre una variables. La correlación puede ser positiva o negativa.",
+        "opcion7_2": "Medir el grado de relación que exista entre 2 a más conceptos o variables. La correlación puede ser neutra.",
+        "opcion7_3": "Identificar la posible relación que exista entre 2 a más conceptos o variables. La correlación puede ser únicamente descrita.",
+        "opcion7_4": "Medir el grado de relación que exista entre 2 a más conceptos o variables. La correlación puede ser positiva o negativa."
+      },
+      "respuestaCorrecta": "opcion7_4"
+    },
+    {
+      "id": "pregunta8",
+      "pregunta": "¿Cuál de los siguientes postulados no representan una característica de los estudios experimentales?",
+      "opciones": {
+        "opcion8_1": "En un estudio experimental se realiza la manipulación directa de una o más variables independientes y se controlan las variables dependientes.",
+        "opcion8_2": "Se realiza una observación directa y sistemática del fenómeno en estudio.",
+        "opcion8_3": "Se lleva a cabo un diseño previo que se ajuste al problema de investigación.",
+        "opcion8_4": "Se mantiene el control de las variables que puedan influir en el estudio, asegurando la validez y confiabilidad de los resultados."
+      },
+      "respuestaCorrecta": "opcion8_2"
+    },
+    {
+      "id": "pregunta9",
+      "pregunta": "En un estudio exploratorio, ¿qué propósito se persigue principalmente?",
+      "opciones": {
+        "opcion9_1": "Probar una hipótesis.",
+        "opcion9_2": "Describir o indagar en un fenómeno poco conocido o explorado.",
+        "opcion9_3": "Comparar variables entre dos grupos.",
+        "opcion9_4": "Determinar la relación de causa y efecto entre dos variables."
+      },
+      "respuestaCorrecta": "opcion9_2"
+    },
+    {
+      "id": "pregunta10",
+      "pregunta": " ¿Cuál(es) de las siguientes afirmaciones no corresponde(n) a una característica de los estudios correlacionales?",
+      "opciones": {
+        "opcion10_1": "Se busca determinar el grado de relación entre dos o más variables.",
+        "opcion10_2": "No permite establecer relaciones de causa y efecto entre las variables estudiadas.",
+        "opcion10_3": "Implica la manipulación directa de las variables independientes.",
+        "opcion10_4": "Evalúan el grado de asociación o relación entre las variables."
+      },
+      "respuestaCorrecta": "opcion10_3"
+    },
+    {
+      "id": "pregunta11",
+      "pregunta": " ¿Cuál(es) de las siguientes afirmaciones no corresponde(n) a una característica de los estudios correlacionales?",
+      "opciones": {
+        "opcion11_1": "Se busca determinar el grado de relación entre dos o más variables.",
+        "opcion11_2": "No permite establecer relaciones de causa y efecto entre las variables estudiadas.",
+        "opcion11_3": "Implica la manipulación directa de las variables independientes.",
+        "opcion11_4": "Evalúan el grado de asociación o relación entre las variables."
+      },
+      "respuestaCorrecta": "opcion11_3"
+    },
+    {
+      "id": "pregunta12",
+      "pregunta": " ¿Cuál(es) de las siguientes afirmaciones no corresponde(n) a una característica de los estudios correlacionales?",
+      "opciones": {
+        "opcion12_1": "Se busca determinar el grado de relación entre dos o más variables.",
+        "opcion12_2": "No permite establecer relaciones de causa y efecto entre las variables estudiadas.",
+        "opcion12_3": "Implica la manipulación directa de las variables independientes.",
+        "opcion12_4": "Evalúan el grado de asociación o relación entre las variables."
+      },
+      "respuestaCorrecta": "opcion12_3"
+    },
+    {
+      "id": "pregunta13",
+      "pregunta": " ¿Cuál(es) de las siguientes afirmaciones no corresponde(n) a una característica de los estudios correlacionales?",
+      "opciones": {
+        "opcion13_1": "Se busca determinar el grado de relación entre dos o más variables.",
+        "opcion13_2": "No permite establecer relaciones de causa y efecto entre las variables estudiadas.",
+        "opcion13_3": "Implica la manipulación directa de las variables independientes.",
+        "opcion13_4": "Evalúan el grado de asociación o relación entre las variables."
+      },
+      "respuestaCorrecta": "opcion13_3"
+    },
+    {
+      "id": "pregunta14",
+      "pregunta": " ¿Cuál(es) de las siguientes afirmaciones no corresponde(n) a una característica de los estudios correlacionales?",
+      "opciones": {
+        "opcion14_1": "Se busca determinar el grado de relación entre dos o más variables.",
+        "opcion14_2": "No permite establecer relaciones de causa y efecto entre las variables estudiadas.",
+        "opcion14_3": "Implica la manipulación directa de las variables independientes.",
+        "opcion14_4": "Evalúan el grado de asociación o relación entre las variables."
+      },
+      "respuestaCorrecta": "opcion14_3"
+    },
+    {
+      "id": "pregunta15",
+      "pregunta": " ¿Cuál(es) de las siguientes afirmaciones no corresponde(n) a una característica de los estudios correlacionales?",
+      "opciones": {
+        "opcion15_1": "Se busca determinar el grado de relación entre dos o más variables.",
+        "opcion15_2": "No permite establecer relaciones de causa y efecto entre las variables estudiadas.",
+        "opcion15_3": "Implica la manipulación directa de las variables independientes.",
+        "opcion15_4": "Evalúan el grado de asociación o relación entre las variables."
+      },
+      "respuestaCorrecta": "opcion15_3"
+    },
+    {
+      "id": "pregunta16",
+      "pregunta": " ¿Cuál(es) de las siguientes afirmaciones no corresponde(n) a una característica de los estudios correlacionales?",
+      "opciones": {
+        "opcion16_1": "Se busca determinar el grado de relación entre dos o más variables.",
+        "opcion16_2": "No permite establecer relaciones de causa y efecto entre las variables estudiadas.",
+        "opcion16_3": "Implica la manipulación directa de las variables independientes.",
+        "opcion16_4": "Evalúan el grado de asociación o relación entre las variables."
+      },
+      "respuestaCorrecta": "opcion16_3"
+    },
+    {
+      "id": "pregunta17",
+      "pregunta": " ¿Cuál(es) de las siguientes afirmaciones no corresponde(n) a una característica de los estudios correlacionales?",
+      "opciones": {
+        "opcion17_1": "Se busca determinar el grado de relación entre dos o más variables.",
+        "opcion17_2": "No permite establecer relaciones de causa y efecto entre las variables estudiadas.",
+        "opcion17_3": "Implica la manipulación directa de las variables independientes.",
+        "opcion17_4": "Evalúan el grado de asociación o relación entre las variables."
+      },
+      "respuestaCorrecta": "opcion17_3"
+    },
+    {
+      "id": "pregunta18",
+      "pregunta": " ¿Cuál(es) de las siguientes afirmaciones no corresponde(n) a una característica de los estudios correlacionales?",
+      "opciones": {
+        "opcion18_1": "Se busca determinar el grado de relación entre dos o más variables.",
+        "opcion18_2": "No permite establecer relaciones de causa y efecto entre las variables estudiadas.",
+        "opcion18_3": "Implica la manipulación directa de las variables independientes.",
+        "opcion18_4": "Evalúan el grado de asociación o relación entre las variables."
+      },
+      "respuestaCorrecta": "opcion18_3"
+    },
+    {
+      "id": "pregunta19",
+      "pregunta": " ¿Cuál(es) de las siguientes afirmaciones no corresponde(n) a una característica de los estudios correlacionales?",
+      "opciones": {
+        "opcion19_1": "Se busca determinar el grado de relación entre dos o más variables.",
+        "opcion19_2": "No permite establecer relaciones de causa y efecto entre las variables estudiadas.",
+        "opcion19_3": "Implica la manipulación directa de las variables independientes.",
+        "opcion19_4": "Evalúan el grado de asociación o relación entre las variables."
+      },
+      "respuestaCorrecta": "opcion19_3"
+    },
+    {
+      "id": "pregunta20",
+      "pregunta": " ¿Cuál(es) de las siguientes afirmaciones no corresponde(n) a una característica de los estudios correlacionales?",
+      "opciones": {
+        "opcion20_1": "Se busca determinar el grado de relación entre dos o más variables.",
+        "opcion20_2": "No permite establecer relaciones de causa y efecto entre las variables estudiadas.",
+        "opcion20_3": "Implica la manipulación directa de las variables independientes.",
+        "opcion20_4": "Evalúan el grado de asociación o relación entre las variables."
+      },
+      "respuestaCorrecta": "opcion20_3"
+    },
+    {
+      "id": "pregunta21",
+      "pregunta": " ¿Cuál(es) de las siguientes afirmaciones no corresponde(n) a una característica de los estudios correlacionales?",
+      "opciones": {
+        "opcion21_1": "Se busca determinar el grado de relación entre dos o más variables.",
+        "opcion21_2": "No permite establecer relaciones de causa y efecto entre las variables estudiadas.",
+        "opcion21_3": "Implica la manipulación directa de las variables independientes.",
+        "opcion21_4": "Evalúan el grado de asociación o relación entre las variables."
+      },
+      "respuestaCorrecta": "opcion21_3"
+    },
+    {
+      "id": "pregunta22",
+      "pregunta": " ¿Cuál(es) de las siguientes afirmaciones no corresponde(n) a una característica de los estudios correlacionales?",
+      "opciones": {
+        "opcion22_1": "Se busca determinar el grado de relación entre dos o más variables.",
+        "opcion22_2": "No permite establecer relaciones de causa y efecto entre las variables estudiadas.",
+        "opcion22_3": "Implica la manipulación directa de las variables independientes.",
+        "opcion22_4": "Evalúan el grado de asociación o relación entre las variables."
+      },
+      "respuestaCorrecta": "opcion22_3"
+    },
+    {
+      "id": "pregunta23",
+      "pregunta": " ¿Cuál(es) de las siguientes afirmaciones no corresponde(n) a una característica de los estudios correlacionales?",
+      "opciones": {
+        "opcion23_1": "Se busca determinar el grado de relación entre dos o más variables.",
+        "opcion23_2": "No permite establecer relaciones de causa y efecto entre las variables estudiadas.",
+        "opcion23_3": "Implica la manipulación directa de las variables independientes.",
+        "opcion23_4": "Evalúan el grado de asociación o relación entre las variables."
+      },
+      "respuestaCorrecta": "opcion23_3"
+    },
+    {
+      "id": "pregunta24",
+      "pregunta": " ¿Cuál(es) de las siguientes afirmaciones no corresponde(n) a una característica de los estudios correlacionales?",
+      "opciones": {
+        "opcion24_1": "Se busca determinar el grado de relación entre dos o más variables.",
+        "opcion24_2": "No permite establecer relaciones de causa y efecto entre las variables estudiadas.",
+        "opcion24_3": "Implica la manipulación directa de las variables independientes.",
+        "opcion24_4": "Evalúan el grado de asociación o relación entre las variables."
+      },
+      "respuestaCorrecta": "opcion24_3"
+    },
+    {
+      "id": "pregunta25",
+      "pregunta": " ¿Cuál(es) de las siguientes afirmaciones no corresponde(n) a una característica de los estudios correlacionales?",
+      "opciones": {
+        "opcion25_1": "Se busca determinar el grado de relación entre dos o más variables.",
+        "opcion25_2": "No permite establecer relaciones de causa y efecto entre las variables estudiadas.",
+        "opcion25_3": "Implica la manipulación directa de las variables independientes.",
+        "opcion25_4": "Evalúan el grado de asociación o relación entre las variables."
+      },
+      "respuestaCorrecta": "opcion25_3"
+    },
+    {
+      "id": "pregunta26",
+      "pregunta": " ¿Cuál(es) de las siguientes afirmaciones no corresponde(n) a una característica de los estudios correlacionales?",
+      "opciones": {
+        "opcion26_1": "Se busca determinar el grado de relación entre dos o más variables.",
+        "opcion26_2": "No permite establecer relaciones de causa y efecto entre las variables estudiadas.",
+        "opcion26_3": "Implica la manipulación directa de las variables independientes.",
+        "opcion26_4": "Evalúan el grado de asociación o relación entre las variables."
+      },
+      "respuestaCorrecta": "opcion26_3"
+    },
+    {
+      "id": "pregunta27",
+      "pregunta": " ¿Cuál(es) de las siguientes afirmaciones no corresponde(n) a una característica de los estudios correlacionales?",
+      "opciones": {
+        "opcion27_1": "Se busca determinar el grado de relación entre dos o más variables.",
+        "opcion27_2": "No permite establecer relaciones de causa y efecto entre las variables estudiadas.",
+        "opcion27_3": "Implica la manipulación directa de las variables independientes.",
+        "opcion27_4": "Evalúan el grado de asociación o relación entre las variables."
+      },
+      "respuestaCorrecta": "opcion27_3"
+    },
+    {
+      "id": "pregunta28",
+      "pregunta": " ¿Cuál(es) de las siguientes afirmaciones no corresponde(n) a una característica de los estudios correlacionales?",
+      "opciones": {
+        "opcion28_1": "Se busca determinar el grado de relación entre dos o más variables.",
+        "opcion28_2": "No permite establecer relaciones de causa y efecto entre las variables estudiadas.",
+        "opcion28_3": "Implica la manipulación directa de las variables independientes.",
+        "opcion28_4": "Evalúan el grado de asociación o relación entre las variables."
+      },
+      "respuestaCorrecta": "opcion28_3"
+    },
+    {
+      "id": "pregunta29",
+      "pregunta": " ¿Cuál(es) de las siguientes afirmaciones no corresponde(n) a una característica de los estudios correlacionales?",
+      "opciones": {
+        "opcion29_1": "Se busca determinar el grado de relación entre dos o más variables.",
+        "opcion29_2": "No permite establecer relaciones de causa y efecto entre las variables estudiadas.",
+        "opcion29_3": "Implica la manipulación directa de las variables independientes.",
+        "opcion29_4": "Evalúan el grado de asociación o relación entre las variables."
+      },
+      "respuestaCorrecta": "opcion29_3"
+    },
+    {
+      "id": "pregunta30",
+      "pregunta": " ¿Cuál(es) de las siguientes afirmaciones no corresponde(n) a una característica de los estudios correlacionales?",
+      "opciones": {
+        "opcion30_1": "Se busca determinar el grado de relación entre dos o más variables.",
+        "opcion30_2": "No permite establecer relaciones de causa y efecto entre las variables estudiadas.",
+        "opcion30_3": "Implica la manipulación directa de las variables independientes.",
+        "opcion30_4": "Evalúan el grado de asociación o relación entre las variables."
+      },
+      "respuestaCorrecta": "opcion30_3"
+    }
+  ]
+}
